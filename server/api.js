@@ -1,6 +1,7 @@
 'use strict'
 
-const db = require('APP/db')
+// const db = require('APP/db')
+const db = require('../db/index')
 const api = module.exports = require('express').Router()
 const Question = require('../db/db').Question;
 const Answer = require('../db/db').Answer;
