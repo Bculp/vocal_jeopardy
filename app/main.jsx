@@ -27,8 +27,7 @@ import OneQuestion from './components/OneQuestion'
 render (
   
     <Router history={browserHistory}>
-      <Route path="/" component={AllQuestions}>
-      </Route>
+      <Route path="/" component={AllQuestions}/>
         <Route path="/question" component={OneQuestion} />
     </Router>,
   document.getElementById('main')
