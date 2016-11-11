@@ -5,7 +5,6 @@ import {render} from 'react-dom'
 import {connect, Provider} from 'react-redux'
 
 import store from './store'
-import Jokes from './components/Jokes'
 import AllQuestions from './components/AllQuestions'
 import OneQuestion from './components/OneQuestion'
 
@@ -29,8 +28,8 @@ render (
   
     <Router history={browserHistory}>
       <Route path="/" component={AllQuestions}>
-        <Route path="/question" component={OneQuestion} />
       </Route>
+        <Route path="/question" component={OneQuestion} />
     </Router>,
   document.getElementById('main')
 )

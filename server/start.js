@@ -21,6 +21,8 @@ if (!pkg.isProduction && !pkg.isTesting) {
 }
 
 module.exports = app
+
+// app
   // We'll store the whole session in a cookie
   // .use(require('cookie-session') ({
   //   name: 'session',
@@ -57,6 +59,68 @@ if (module === require.main) {
   // )
   app.listen(1337, function(err) {
     if(err) throw err;
-    console.log('Listening on port 3000')
+    console.log('Listening on port 1337')
   })
 }
+
+
+//secure https server
+// var http = require('http')
+// var https = require('https');
+// var fs = require('fs');
+
+// var pkey = fs.readFileSync('./key.pem');
+// var pcert = fs.readFileSync('./cert.pem')
+
+// var options = {
+//     key: pkey,
+//     cert: pcert
+// };
+
+
+//another method
+// https.createServer(options, function (req, res) {
+//     res.writeHead(200);
+//     res.end("hello world\n");
+// }, app).listen(443);
+
+//first method
+// var server = https.createServer(options, function (req, res) {
+//     res.writeHead(200);
+//     res.end("hello world\n");
+// }).listen(443);
+
+//another one
+//utf8 but my file might not be utf8
+    // key: fs.readFileSync('/Users/brandonculp/fullstackAcademy/Senior_Phase/stackathon/voice_jeopardy/server/key.pem'),
+    // key: fs.readFileSync('key.pem'),
+    // cert: fs.readFileSync('cert.pem'),
+
+    //doesnt throw an error but doesn't start server
+    // key: fs.readFileSync('/Users/brandonculp/fullstackAcademy/Senior_Phase/stackathon/voice_jeopardy/server/key.pem'),
+    // cert: fs.readFileSync('/Users/brandonculp/fullstackAcademy/Senior_Phase/stackathon/voice_jeopardy/server/cert.pem'),
+
+
+// var options = {
+    // key: fs.readFileSync('key.pem', 'utf8'),
+    // cert: fs.readFileSync('cert.pem', 'utf8'),
+//     requestCert: false,
+//     rejectUnauthorized: false
+// };
+
+// var options = {
+//     key: fs.readFileSync('/Users/brandonculp/fullstackAcademy/Senior_Phase/stackathon/voice_jeopardy/server/key.pem'),
+//     cert: fs.readFileSync('/Users/brandonculp/fullstackAcademy/Senior_Phase/stackathon/voice_jeopardy/server/cert.pem')
+//     // key: fs.readFileSync('key.pem'),
+//     // cert: fs.readFileSync('cert.pem')
+// }
+
+// // var httpServer = http.createServer(app)
+// var httpsServer = https.createServer(options, app);
+// // httpServer.listen(8080)
+// httpsServer.listen(8443)
+
+// console.log(key)
+// var server = https.createServer(options, app).listen(1337, function(){
+//     console.log("server started at port 1337");
+// });

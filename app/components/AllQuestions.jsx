@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
+
 export default class AllQuestions extends React.Component {
 	constructor(props) {
 		super(props);
@@ -21,14 +22,16 @@ export default class AllQuestions extends React.Component {
 	
 	render() {
 		return (
-				<div>
+				<div className='row'>
 					{this.state.questions.map(question => (
-						<div>
+						<div className='col s2' key={question.id}>
+							<h5>{question.title}</h5>
 						</div>
-						<h3>{question.title}</h3>
-					))}
+						))
+					}
 				</div>
 		)
 	}
 }
 			
+					// {this.props.children}

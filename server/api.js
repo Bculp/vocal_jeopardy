@@ -6,8 +6,6 @@ const Question = require('../db/db').Question;
 const Answer = require('../db/db').Answer;
 
 api
-  .get('/heartbeat', (req, res) => res.send({ok: true}))
-  // .use('/someroute', require('./someroute'))
   .get('/questions', (req, res, next) => {
     // let sportsCat = [], entertainmentCat = [], scienceCat = [];
     console.log('hit route')
