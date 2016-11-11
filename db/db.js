@@ -5,4 +5,4 @@ const Answer = require('./models/answer');
 
 Question.hasOne(Answer);
 
-module.exports = db;
+module.exports = {db, Question, Answer};

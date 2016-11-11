@@ -6,6 +6,8 @@ import {connect, Provider} from 'react-redux'
 
 import store from './store'
 import Jokes from './components/Jokes'
+import AllQuestions from './components/AllQuestions'
+import OneQuestion from './components/OneQuestion'
 
 
 // const ExampleApp = connect(
@@ -21,13 +23,13 @@ import Jokes from './components/Jokes'
 // )
 
 // <Provider store={store}>
+        // <IndexRedirect to="/" />
 
 render (
   
     <Router history={browserHistory}>
-      <Route path="/" component={Jokes}>
-        <IndexRedirect to="/jokes" />
-        <Route path="/jokes" component={Jokes} />
+      <Route path="/" component={AllQuestions}>
+        <Route path="/question" component={OneQuestion} />
       </Route>
     </Router>,
   document.getElementById('main')

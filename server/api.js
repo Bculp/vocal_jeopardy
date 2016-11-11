@@ -2,15 +2,20 @@
 
 const db = require('APP/db')
 const api = module.exports = require('express').Router()
+const Question = require('../db/db').Question;
+const Answer = require('../db/db').Answer;
 
 api
   .get('/heartbeat', (req, res) => res.send({ok: true}))
   // .use('/someroute', require('./someroute'))
-  .get('/testing', (req, res) => {
+  .get('/questions', (req, res, next) => {
     // let sportsCat = [], entertainmentCat = [], scienceCat = [];
-	// Question.findAll({
-	// 	include: [{ model: Answer}]
-	// })
+    console.log('hit route')
+	Question.findAll({
+		include: [{ model: Answer}]
+	})
+	.then(allData => res.send(allData))
+	.catch(err=> console.log(err))
 	// .then(allQuestions => {
 		
 	// 	allQuestions.forEach(index => {
