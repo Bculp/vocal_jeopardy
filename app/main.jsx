@@ -15,7 +15,7 @@ render (
   
     <Router history={browserHistory}>
       <Route path="/" component={AllQuestions}/>
-        <Route path="/question" component={OneQuestion} />
+        <Route path="/question/:questionId" component={OneQuestion} />
     </Router>,
   document.getElementById('main')
 )
