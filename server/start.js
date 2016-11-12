@@ -46,7 +46,7 @@ module.exports = app
 //**--------THIS MIGHT BE CAUSING MY BUNDLE JS "<" ISSUE-------**///////
 
   // Send index.html for anything else.
-  // .get('/*', (_, res) => res.sendFile(resolve(__dirname, '..', 'public', 'index.html')))
+  .get('/*', (_, res) => res.sendFile(resolve(__dirname, '..', 'public', 'index.html')))
 
 // if (module === require.main) {
 //   // Start listening only if we're the main module.
