@@ -8,19 +8,6 @@ import store from './store'
 import AllQuestions from './components/AllQuestions'
 import OneQuestion from './components/OneQuestion'
 
-
-// const ExampleApp = connect(
-//   ({ auth }) => ({ user: auth })
-// ) (
-//   ({ user, children }) =>
-//     <div>
-//       <nav>
-//         {user ? <WhoAmI/> : <Login/>}
-//       </nav> 
-//       {children}
-//     </div>
-// )
-
 // <Provider store={store}>
         // <IndexRedirect to="/" />
 

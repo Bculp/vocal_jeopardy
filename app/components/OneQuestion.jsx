@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
+const annyang = require('../../public/annyang_source_code');
 let helloFunction = function() {
 	alert('hello!!')
 }
