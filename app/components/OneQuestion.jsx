@@ -9,8 +9,6 @@ let helloFunction = function() {
 let command = {'test': helloFunction};
 annyang.addCommands(command)
 
-annyang.start()
-
 //setup outline for 1 component or 1 question then will just render one of these
 //components for each question
 
@@ -25,6 +23,7 @@ export default class OneQuestion extends React.Component {
 				<h1>hello</h1>
 				
 					{console.log(annyang.isListening())}
+					{annyang.start()}
 					
 					{console.log(annyang.isListening())}
 					{console.log(annyang.isListening())}
