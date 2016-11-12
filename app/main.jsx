@@ -22,7 +22,7 @@ render (
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={AllQuestionsContainer} onEnter={onAllQuestionsEnter}/>
-        <Route path="/question" component={OneQuestion} />
+        <Route path="/question/:questionId" component={OneQuestion} />
     </Router>
    </Provider>,
   document.getElementById('main')
