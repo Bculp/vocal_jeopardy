@@ -1,5 +1,21 @@
 import React from 'react';
 import axios from 'axios';
+import { browserHistory } from 'react-router';
+
+const annyang = require('../../public/annyang_source_code');
+
+let showCategoryFn = function() {
+	browserHistory.push('/question')
+}
+
+let testFn = function() {
+	console.log('this totally works')
+}
+
+let changeComponent = {'question': showCategoryFn};
+let command3 = {'macbook' : testFn};
+annyang.addCommands(changeComponent)
+annyang.addCommands(command3)
 
 
 export default class AllQuestions extends React.Component {
@@ -29,6 +45,7 @@ export default class AllQuestions extends React.Component {
 						</div>
 						))
 					}
+					{annyang.start()}
 				</div>
 		)
 	}
