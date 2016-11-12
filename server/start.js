@@ -46,7 +46,7 @@ module.exports = app
 //**--------THIS MIGHT BE CAUSING MY BUNDLE JS "<" ISSUE-------**///////
 
   // Send index.html for anything else.
-  .use('/dist', express.static(resolve(__dirname, 'dist')))
+  // .use('/dist', express.static(resolve(__dirname, 'dist')))
   .get('/*', (_, res) => res.sendFile(resolve(__dirname, '..', 'public', 'index.html')))
 
 // if (module === require.main) {
