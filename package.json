@@ -70,5 +70,6 @@
     "supertest-as-promised": "^4.0.1",
     "volleyball": "^1.4.1",
     "webpack": "^1.13.3"
-  }
+  },
+  "postinstall" : "webpack --config ./webpack.config.js --progress --colors"
 }
