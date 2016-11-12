@@ -12,7 +12,6 @@ const db = require('../db/index')
 //
 // This next line requires our root index.js:
 // const pkg = require('APP')
-console.log("MA BOI", process.env.DATABASE_URL)
 
 const app = express()
 
