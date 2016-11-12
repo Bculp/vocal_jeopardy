@@ -1,25 +1,11 @@
 <!doctype html>
 <html>
   <head>
+	<link type='text/css' href='./materialize/css/materialize.css'>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  	<!-- <script src='./annyang-master/annyang.js'></script> -->
 	<link rel='stylesheet' type='text/css' href='./style.css'>
   	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  	<script>
-  	console.log(annyang.isListening())
-  	if (annyang) {
-  		var commands = {
-  			'testing': function() {
-  				alert('it works!')
-  			}
-  		}
-  		annyang.addCommands(commands);
-  		annyang.start();
-  	console.log(annyang.isListening())
-
-  	}
-  	console.log(annyang.isListening())
-  	</script>
   </head>
   <body>
     <div id=main></div>

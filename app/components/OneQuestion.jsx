@@ -1,14 +1,14 @@
 import React from 'react';
 import axios from 'axios';
 
-// let helloFunction = function() {
-// 	alert('hello!!')
-// }
-// // // //annyang commands
-// let command = {'test': helloFunction};
-// annyang.addCommands(command)
+let helloFunction = function() {
+	alert('hello!!')
+}
+// // //annyang commands
+let command = {'test': helloFunction};
+annyang.addCommands(command)
 
-// {annyang.start()}
+annyang.start()
 
 //setup outline for 1 component or 1 question then will just render one of these
 //components for each question
