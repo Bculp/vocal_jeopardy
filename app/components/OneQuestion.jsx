@@ -44,12 +44,3 @@ export default class OneQuestion extends React.Component {
 	}
 
 }
-
-
-
-// let command = {'test': helloFunction};
-
-// //annyang commands
-// annyang.addCommands(command)
-// annyang.start({autoRestart: false})
-// annyang.isListening()
