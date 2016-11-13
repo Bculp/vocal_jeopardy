@@ -31,6 +31,19 @@ api
 	// 	res.render('index', {sports: sportsCat, entertainment: entertainmentCat})
 	// })
   })
+  .get('/questions/:questionId', (req, res, next) => {
+  	Question.findOne({
+  		where: {
+  			id: req.params.questionId
+  		},
+  		include: [{ model: Answer}]
+  	})
+  	.then(question => {
+  		res.send(question)
+  	})
+  	.catch(err => console.log(err))
+  })
+
 
 // Send along any errors
 api.use((err, req, res, next) => {
