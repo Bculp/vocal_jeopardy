@@ -7,9 +7,9 @@ const OneQuestionComponent = function(props) {
 		//should be an obj
 	//console.log('props', props.question)
 	return ( 
-		<div className='row'>
-			<div className='col s12'>
-				<p>this is one question comp</p> 
+		<div className=''>
+			<div className='z-depth-5 oneQ'>
+				<p className='qText'>{props.question.title}</p> 
 			</div>
 		</div>
 
