@@ -1,7 +1,8 @@
 import React from 'react'
 import { browserHistory } from 'react'
+import PointRows from './PointRows'
 
-const AllQuestions = function(props) {
+const AllQuestions = function() {
 
 //pull in annyang
 // const annyang = require('../../public/annyang_source_code');
@@ -9,7 +10,7 @@ const AllQuestions = function(props) {
 const annyang = require('../../public/annyang_source_code');
 
 
-console.log('all questions props', props)
+// console.log('all questions props', props)
 
 //attempt to loop for multiple commands - problem is the fn is called immediately
 //instead of waiting for command to call it because it's accepting a parameter
@@ -52,20 +53,22 @@ console.log('all questions props', props)
 
 //need pts to be in own boxes below categories
 
+//**==MOVED PROPS TO POINTROWS - JUST RENDERED THIS STATICALLY NOW==**//
+
 			annyang.start()
 			annyang.debug()
 let tempClassName = ''
 	return (
-		<div className='row'>
-			{props.allQsandAs.map(question => (
-				<div className= "col s2 allQ" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{question.category}</p>
-					<div className='pts'>
-						<p>100</p>
-					</div>
-				</div>
-			))}
-		</div>
+		
+			<div className='row'>
+				<div className='col s1 allQ category'>ENTERTAINMENT</div>
+				<div className='col s1 allQ category'>SPORTS</div>
+				<div className='col s1 allQ category'>COLLEGE SPORTS</div>
+				<div className='col s1 allQ category'>SCIENCE</div>
+				<div className='col s1 allQ category'>JEOPARDY</div>
+				<div className='col s1 allQ category'>PLACES</div>
+			</div>
+		
 	)
 }
 

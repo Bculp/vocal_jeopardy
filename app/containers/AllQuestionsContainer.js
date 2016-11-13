@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import { loadQsAndAs } from '../action-creators'
 import AllQuestions from '../components/AllQuestions'
+import PointRows from '../components/PointRows'
 
 
 const mapStateToProps = function(state) {
@@ -21,5 +22,5 @@ const mapDispatchToProps = function(dispatch) {
 }
 
 const componentCreator = connect(mapStateToProps, mapDispatchToProps);
-const AllQuestionsContainer = componentCreator(AllQuestions);
+const AllQuestionsContainer = componentCreator(PointRows);
 export default AllQuestionsContainer;
