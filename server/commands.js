@@ -1,6 +1,7 @@
 //NOT USING YET
 const annyang = require('../public/annyang_source_code');
 import { browserHistory } from 'react-router'
+import React from 'react'
 
 let obj = {arrOfCommands: []};
 let test = [];
@@ -17,6 +18,7 @@ const Commands = function(props) {
 		for (var i = 0; i < elArr.length; i ++) {
 			elArr[i].className += 'answered'
 		}
+		console.log('got it')
 		browserHistory.push('/')
 	}
 
@@ -112,7 +114,9 @@ const Commands = function(props) {
 		'LOCATION 200' : PLACES200,
 		'New York City' : PLACES200ANSWER
 	})
-	return annyang;
+	return (<h1>inside commands js</h1>)
+
+	// return annyang;
 	// console.log('hello')
 	// console.log('inside annyang', annyang)
 	// return annyang;
@@ -122,7 +126,7 @@ const Commands = function(props) {
 Commands();
 console.log('this is annyang', annyang)
 console.log('arrOfCommands', test)
-module.exports = {Commands, annyang};
+module.exports = Commands;
 
 
 

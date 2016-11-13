@@ -5,7 +5,9 @@ const AllQuestions = function(props) {
 
 //pull in annyang
 // const annyang = require('../../public/annyang_source_code');
-const annyang = require('../../server/commands').annyang;
+// const annyang = require('../../server/commands').annyang;
+const annyang = require('../../public/annyang_source_code');
+
 
 console.log('all questions props', props)
 

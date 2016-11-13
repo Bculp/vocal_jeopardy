@@ -32,10 +32,13 @@ const answeredQuestionEnter = function(nextRouterState) {
 	store.dispatch(thunk)
 }
 
+import CommandsContainer from './containers/CommandsContainer';
+
 render (
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={AllQuestionsContainer} onEnter={onAllQuestionsEnter}/>
+      <Route path="/test" component={CommandsContainer}/>
       <Route path="/question/:questionId" component={OneQuestionContainer} onEnter={onOneQuestionEnter}/>
     </Router>
    </Provider>,

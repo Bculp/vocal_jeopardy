@@ -1,8 +1,9 @@
 import React from 'react';
-const annyang = require('../../server/commands').annyang;
+// const annyang = require('../../server/commands').annyang;
+const annyang = require('../../public/annyang_source_code');
 
 //checking to see what Commands is and it's the whole function..
-const Commands = require('../../server/commands').Commands;
+const Commands = require('../../server/commands');
 console.log('commands is', Commands)
 
 
