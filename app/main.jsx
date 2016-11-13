@@ -13,7 +13,7 @@ import OneQuestionContainer from './containers/OneQuestionContainer'
         // <IndexRedirect to="/" />
 
 //add onEnter to dispatch initial action
-import { loadQsAndAs, loadOneQuestion } from './action-creators';
+import { loadQsAndAs, loadOneQuestion, loadQuestionToAnswer } from './action-creators';
 
 const onAllQuestionsEnter = function() {
 	const thunk = loadQsAndAs();
@@ -24,6 +24,12 @@ const onOneQuestionEnter = function(nextRouterState) {
 	const questionId = nextRouterState.params.questionId
 	const thunk = loadOneQuestion(questionId)
 	store.dispatch(thunk);
+}
+//not calling since then nothing renders on hoempage
+const answeredQuestionEnter = function(nextRouterState) {
+	const questionId = nextRouterState.params.questionId
+	const thunk = loadQuestionToAnswer(questionId)
+	store.dispatch(thunk)
 }
 
 render (

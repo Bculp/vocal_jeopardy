@@ -5,8 +5,9 @@ const AllQuestions = function(props) {
 
 //pull in annyang
 // const annyang = require('../../public/annyang_source_code');
-const annyang = require('../../server/commands')
+const annyang = require('../../server/commands').annyang;
 
+console.log('all questions props', props)
 
 //attempt to loop for multiple commands - problem is the fn is called immediately
 //instead of waiting for command to call it because it's accepting a parameter
@@ -47,26 +48,23 @@ const annyang = require('../../server/commands')
 // 	createObj(`${question.category}${question.pointValue}`, notYet, question.id)
 // })
 
-		annyang.start()
+//need pts to be in own boxes below categories
 
+			annyang.start()
+			annyang.debug()
+let tempClassName = ''
 	return (
-		// props.allQsandAs.map(question => (
-		// 	<div className='col s2' key={question.id} id={question.category + question.pointValue}>
-		// 		<h6>{question.title}</h6>
-		// 	</div>
-		// ))
-		// annyang.start()
-		<h3>TESTING</h3>
+		<div className='row'>
+			{props.allQsandAs.map(question => (
+				<div className= "col s2 allQ" key={question.id}>
+					<p className= {`${question.category}${question.pointValue}`}>{question.category}</p>
+					<div className='pts'>
+						<p>100</p>
+					</div>
+				</div>
+			))}
+		</div>
 	)
 }
 
 export default AllQuestions;
-			// {this.state.questions.map(question => (
-			// 	<div className='col s2' key={question.id} id={question.category + question.pointValue}>
-			// 		<h6>{question.title}</h6>
-
-
-			// 	</div>
-			// 	))
-			// }
-			// {annyang.start()}

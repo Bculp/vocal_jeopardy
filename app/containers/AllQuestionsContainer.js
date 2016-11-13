@@ -6,7 +6,8 @@ import AllQuestions from '../components/AllQuestions'
 const mapStateToProps = function(state) {
 	return {
 		//this state.allQuestions is named after whatever we link our combined reducer to
-		allQsandAs: state.allQuestions
+		allQsandAs: state.allQuestions,
+		questionStatus: state.questionStatus
 	}
 }
 

@@ -1,6 +1,7 @@
 import axios from 'axios';
 export const RECEIVE_QUESTIONS_AND_ANSWERS = 'RECEIVE_QUESTIONS_AND_ANSWERS';
 export const SELECT_QUESTION = 'SELECT_QUESTION';
+export const ANSWER_QUESTION = 'ANSWER_QUESTION';
 
 const receiveQsAndAs = function(allQsandAs) {
 	return {
@@ -34,6 +35,25 @@ export const loadOneQuestion = function(questionId) {
 		.then(res => res.data)
 		.then(question => {
 			const action = selectQuestion(question)
+			dispatch(action)
+		})
+		.catch(err => console.error(err))
+	}
+}
+
+const answerQuestion = function(question) {
+	return {
+		type: ANSWER_QUESTION
+		// answeredQuestion: question
+	}
+}
+
+export const loadQuestionToAnswer = function(questionId) {
+	return function(dispatch) {
+		axios.get(`/api/questions/${questionId}`)
+		.then(res => res.data)
+		.then(question => {
+			const action = answerQuestion(question)
 			dispatch(action)
 		})
 		.catch(err => console.error(err))

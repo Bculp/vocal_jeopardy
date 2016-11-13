@@ -1,3 +1,11 @@
+/*===ALL QUESTIONS====*/
+.allQ {
+	border-style: ridge;
+	border-width: 1%;
+	text-align: center;
+}
+
+/*====INDIVIDUAL QUESTION==== */
 .oneQ {
 	display: block;
 	margin-left:auto;
@@ -5,10 +13,14 @@
 	width:50%;
 	text-align: center;
 	/*centers vertically*/
-	margin-top: 30%;
+	margin-top: 20%;
 	padding: 10%;
 }
 
 .qText {
 	font-size: 30px
+}
+
+.answered {
+	color: red;
 }
