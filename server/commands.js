@@ -7,7 +7,7 @@ let obj = {arrOfCommands: []};
 let test = [];
 
 const Commands = function(props) {
-	console.log('inside commands and props', props)
+	// console.log('inside commands and props', props)
 
 	let MOVIES100 = function() {
 		browserHistory.push('/question/1')

@@ -4,7 +4,7 @@ const annyang = require('../../public/annyang_source_code');
 
 //checking to see what Commands is and it's the whole function..
 const Commands = require('../../server/commands');
-console.log('commands is', Commands)
+// console.log('commands is', Commands)
 
 
 // //setup outline for 1 component or 1 question then will just render one of these

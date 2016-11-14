@@ -2,8 +2,39 @@ import React from 'react';
 import { browserHistory } from 'react'
 const annyang = require('../../public/annyang_source_code');
 import AllQuestions from './AllQuestions'
+window.counter = 0;
 
 const PointRows = function(props) {
+
+	// function checkCounter() {
+	// 		// console.log('couterchec first layer', counter === 0)
+	// 	// if (document.getElementsByClassName('MOVIES500') != null) {
+	// 	// 	console.log('classes worked')
+	// 	// 	console.log('class', document.getElementsByClassName('MOVIES500'))
+	// 	// 	// document.getElementsByClassName('MOVIES500')[0].innerHTML = '';
+	// 	// }
+	// 	if (document.querySelector('MOVIES500') != null) {
+	// 	document.querySelector('MOVIES500').innerHTML('')
+	// }
+	function newCheckCounter() {
+		question.id === 1 && counter === 0 ? question.pointValue = '' : ''
+		question.id === 5 && counter === 1 ? question.pointValue = '' : ''
+		question.id === 26 && counter === 2 ? question.pointValue = '' : ''
+
+	}
+
+	// 	if (document.getElementById('1') != null) {
+	// 		console.log('INSIDE ----IT WORKED')
+	// 		// switch(counter) {
+	// 		// 	case 0: console.log('YAAAAAAAAAAA')
+	// 		// 		break;
+	// 		// 	default: return;
+	// 		// }
+	// 		console.log('couterchec', counter === 0)
+	// 		if (counter === 0) document.getElementById('1').innerHTML('');
+	// 	}
+	// 	else return;
+	// }
 	annyang.start()
 	annyang.debug()
 	let p100 = [], p200 = [], p300 = [], p400 = [], p500 = [];
@@ -32,7 +63,8 @@ const PointRows = function(props) {
 		<div className='row'>
 			{p100.map(question => (
 				<div className= "col s2 allQ pointVal" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{question.pointValue}</p>
+				{/*newCheckCounter()*/}
+					<p className= {`${question.category}${question.pointValue}`} id={`${question.id}`}>{question.pointValue}</p>
 				</div>
 			))}
 		</div>
@@ -40,7 +72,7 @@ const PointRows = function(props) {
 		<div className='row'>
 			{p200.map(question => (
 				<div className= "col s2 allQ pointVal" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{question.pointValue}</p>
+					<p className= {`${question.category}${question.pointValue}`} id={`${question.id}`}>{question.pointValue}</p>
 				</div>
 			))}
 		</div>
@@ -48,7 +80,7 @@ const PointRows = function(props) {
 		<div className='row'>
 			{p300.map(question => (
 				<div className= "col s2 allQ pointVal" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{question.pointValue}</p>
+					<p className= {`${question.category}${question.pointValue}`} id={`${question.id}`}>{question.pointValue}</p>
 				</div>
 			))}
 		</div>
@@ -56,7 +88,7 @@ const PointRows = function(props) {
 		<div className='row'>
 			{p400.map(question => (
 				<div className= "col s2 allQ pointVal" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{question.pointValue}</p>
+					<p className= {`${question.category}${question.pointValue}`} id={`${question.id}`}>{question.pointValue}</p>
 				</div>
 			))}
 		</div>
@@ -64,7 +96,8 @@ const PointRows = function(props) {
 		<div className='row'>
 			{p500.map(question => (
 				<div className= "col s2 allQ pointVal" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{question.pointValue}</p>
+				{/*newCheckCounter()*/}
+					<p className= {`${question.category}${question.pointValue}`} id={`${question.id}`}>{question.pointValue}</p>
 				</div>
 			))}
 		</div>

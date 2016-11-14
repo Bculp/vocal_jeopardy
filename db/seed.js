@@ -6,10 +6,10 @@ const Promise = require('bluebird');
 //attempt to seed via tp persistence method with multiple tables
 const data = {
 	question: [
-		{title: "This actor played the Joker in the the movie The Dark Knight", category: "MOVIES", pointValue: 100},
-		{title: "This actor played the Joker in the the movie The Dark Knight1", category: "MOVIES", pointValue: 200},
-		{title: "This actor played the Joker in the the movie The Dark Knight2", category: "MOVIES", pointValue: 300},
-		{title: "This actor played the Joker in the the movie The Dark Knight3", category: "MOVIES", pointValue: 400},
+		{title: "This actor played the Joker in the movie The Dark Knight", category: "MOVIES", pointValue: 100},
+		{title: "This actor played the Joker in the movie The Dark Knight1", category: "MOVIES", pointValue: 200},
+		{title: "This actor played the Joker in the movie The Dark Knight2", category: "MOVIES", pointValue: 300},
+		{title: "This actor played the Joker in the movie The Dark Knight3", category: "MOVIES", pointValue: 400},
 		{title: "This actress played Wonder Woman in Batman vs Superman", category: "MOVIES", pointValue: 500},
 		{title: "Michael Jordan played for this team in his prime", category: "SPORTS", pointValue: 100},
 		{title: "Michael Jordan played for this team in his prime2", category: "SPORTS", pointValue: 200},
