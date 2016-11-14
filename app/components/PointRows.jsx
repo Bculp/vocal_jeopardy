@@ -31,45 +31,40 @@ const PointRows = function(props) {
 		{/*POINT VALUE 100 ROW*/}
 		<div className='row'>
 			{p100.map(question => (
-				<div className= "col s2 allQ" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{`${question.category}${question.pointValue}`}</p>
-					<p>100</p>
+				<div className= "col s2 allQ pointVal" key={question.id}>
+					<p className= {`${question.category}${question.pointValue}`}>{question.pointValue}</p>
 				</div>
 			))}
 		</div>
 		{/*POINT VALUE 200 ROW*/}
 		<div className='row'>
 			{p200.map(question => (
-				<div className= "col s2 allQ" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{`${question.category}${question.pointValue}`}</p>
-					<p>200</p>
+				<div className= "col s2 allQ pointVal" key={question.id}>
+					<p className= {`${question.category}${question.pointValue}`}>{question.pointValue}</p>
 				</div>
 			))}
 		</div>
 		{/*POINT VALUE 300 ROW*/}
 		<div className='row'>
 			{p300.map(question => (
-				<div className= "col s2 allQ" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{`${question.category}${question.pointValue}`}</p>
-					<p>300</p>
+				<div className= "col s2 allQ pointVal" key={question.id}>
+					<p className= {`${question.category}${question.pointValue}`}>{question.pointValue}</p>
 				</div>
 			))}
 		</div>
 		{/*POINT VALUE 400 ROW*/}
 		<div className='row'>
 			{p400.map(question => (
-				<div className= "col s2 allQ" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{`${question.category}${question.pointValue}`}</p>
-					<p>400</p>
+				<div className= "col s2 allQ pointVal" key={question.id}>
+					<p className= {`${question.category}${question.pointValue}`}>{question.pointValue}</p>
 				</div>
 			))}
 		</div>
 		{/*POINT VALUE 500 ROW*/}
 		<div className='row'>
 			{p500.map(question => (
-				<div className= "col s2 allQ" key={question.id}>
-					<p className= {`${question.category}${question.pointValue}`}>{`${question.category}${question.pointValue}`}</p>
-					<p>500</p>
+				<div className= "col s2 allQ pointVal" key={question.id}>
+					<p className= {`${question.category}${question.pointValue}`}>{question.pointValue}</p>
 				</div>
 			))}
 		</div>

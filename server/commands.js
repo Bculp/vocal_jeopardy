@@ -9,12 +9,12 @@ let test = [];
 const Commands = function(props) {
 	console.log('inside commands and props', props)
 
-	let ENTERTAINMENT500 = function() {
+	let MOVIES100 = function() {
 		browserHistory.push('/question/1')
 	}
 
-	let ENTERTAINMENT500ANSWER = function() {
-		let elArr = document.getElementsByClassName('ENTERTAINMENT500')
+	let MOVIES100ANSWER = function() {
+		let elArr = document.getElementsByClassName('MOVIES100')
 		for (var i = 0; i < elArr.length; i ++) {
 			elArr[i].className += 'answered'
 		}
@@ -22,11 +22,11 @@ const Commands = function(props) {
 		browserHistory.push('/')
 	}
 
-	let ENTERTAINMENT200 = function() {
-		browserHistory.push('/question/2')
+	let MOVIES500 = function() {
+		browserHistory.push('/question/5')
 	}
 
-	let ENTERTAINMENT200ANSWER = function() {
+	let MOVIES500ANSWER = function() {
 		let elArr = document.getElementsByClassName("PLACES200")
 		for (var i = 0; i < elArr.length; i ++) {
 			elArr[i].className += 'answered'
@@ -34,11 +34,11 @@ const Commands = function(props) {
 		browserHistory.push('/')
 	}
 
-	let SPORTS300 = function() {
-		browserHistory.push('/question/3')
+	let SPORTS100 = function() {
+		browserHistory.push('/question/6')
 	}
 
-	let SPORTS300ANSWER = function() {
+	let SPORTS100ANSWER = function() {
 		let elArr = document.getElementsByClassName("PLACES200")
 		for (var i = 0; i < elArr.length; i ++) {
 			elArr[i].className += 'answered'
@@ -47,7 +47,7 @@ const Commands = function(props) {
 	}
 
 	let COLLEGESPORTS100 = function() {
-		browserHistory.push('/question/4')
+		browserHistory.push('/question/11')
 	}
 
 	let COLLEGESPORTS100ANSWER = function() {
@@ -58,11 +58,11 @@ const Commands = function(props) {
 		browserHistory.push('/')
 	}
 
-	let SCIENCE200 = function() {
-		browserHistory.push('/question/5')
+	let SCIENCE100 = function() {
+		browserHistory.push('/question/16')
 	}
 
-	let SCIENCE200ANSWER = function() {
+	let SCIENCE100ANSWER = function() {
 		let elArr = document.getElementsByClassName("PLACES200")
 		for (var i = 0; i < elArr.length; i ++) {
 			elArr[i].className += 'answered'
@@ -70,11 +70,11 @@ const Commands = function(props) {
 		browserHistory.push('/')
 	}
 
-	let JEOPARDY400 = function() {
-		browserHistory.push('/question/6')
+	let JEOPARDY100 = function() {
+		browserHistory.push('/question/21')
 	}
 
-	let JEOPARDY400ANSWER = function() {
+	let JEOPARDY100ANSWER = function() {
 		let elArr = document.getElementsByClassName("PLACES200")
 		for (var i = 0; i < elArr.length; i ++) {
 			elArr[i].className += 'answered'
@@ -82,11 +82,11 @@ const Commands = function(props) {
 		browserHistory.push('/')
 	}
 
-	let PLACES200 = function() {
-		browserHistory.push('/question/7')
+	let PLACES100 = function() {
+		browserHistory.push('/question/26')
 	}
 
-	let PLACES200ANSWER = function() {
+	let PLACES100ANSWER = function() {
 		// let elArr = document.getElementsByClassName("PLACES200")
 		// for (var i = 0; i < elArr.length; i ++) {
 		// 	elArr[i].className += 'answered'
@@ -95,7 +95,8 @@ const Commands = function(props) {
 		//need to get questionId
 		// let questionId = document.getElementById('7')
 		// console.log('questionId in command.js is', questionId)
-		props.changeQuestionStatus('7')
+
+		// props.changeQuestionStatus('7')
 
 		browserHistory.push('/')
 	}
@@ -104,15 +105,16 @@ const Commands = function(props) {
 	// SPORTS300, COLLEGESPORTS100, SCIENCE200, JEOPARDY400, PLACES200, PLACES200ANSWER]
 
 	annyang.addCommands({
-		'ENTERTAINMENT 500' : ENTERTAINMENT500,
-		'Who is *Gal Gadot' : ENTERTAINMENT500ANSWER,
-		'ENTERTAINMENT 200' : ENTERTAINMENT200,
-		'SPORTS 300' : SPORTS300,
-		'COLLEGESPORTS 100' : COLLEGESPORTS100,
-		'SCIENCE 200' : SCIENCE200,
-		'JEOPARDY 400' : JEOPARDY400,
-		'LOCATION 200' : PLACES200,
-		'New York City' : PLACES200ANSWER
+		'MOVIES 100' : MOVIES100,
+		'Who is *Heath Ledger' : MOVIES100ANSWER,
+		'MOVIES 500' : MOVIES500,
+		'Who is *Gal Gadot' : MOVIES500ANSWER,
+		'SPORTS 100' : SPORTS100,
+		'COLLEGE SPORTS 100' : COLLEGESPORTS100,
+		'SCIENCE 100' : SCIENCE100,
+		'JEOPARDY 100' : JEOPARDY100,
+		'PLACES 100' : PLACES100,
+		'What is *New York City' : PLACES100ANSWER
 	})
 	return (<h1>inside commands js</h1>)
 

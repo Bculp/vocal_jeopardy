@@ -1,13 +1,37 @@
+/*BODY AND PAGE STYLING */
+
+body {
+	background-color: white;
+	color: white;
+}
 /*===ALL QUESTIONS====*/
 .allQ {
 	border-style: ridge;
 	border-width: 1%;
 	text-align: center;
+	border-color: black;
 }
 
 .category {
-	width: 16% !important;
+	width: 16.666666667% !important;
 	padding: 3% !important;
+	background-color: #CE1D25;
+	margin-bottom: -1%;
+}
+
+.category h3 {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.pointVal {
+	margin-bottom: -1.5%;
+	background-color: #CE1D25
+}
+
+.pointVal p {
+	font-size: 2em;
+	padding: 2%;
 }
 
 /*====INDIVIDUAL QUESTION==== */
@@ -20,10 +44,11 @@
 	/*centers vertically*/
 	margin-top: 20%;
 	padding: 10%;
+	background-color: #CE1D25;
 }
 
 .qText {
-	font-size: 30px
+	font-size: 30px;
 }
 
 .answered {

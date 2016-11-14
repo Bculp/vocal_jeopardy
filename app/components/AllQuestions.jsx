@@ -61,12 +61,24 @@ let tempClassName = ''
 	return (
 		
 			<div className='row'>
-				<div className='col s1 allQ category'>ENTERTAINMENT</div>
-				<div className='col s1 allQ category'>SPORTS</div>
-				<div className='col s1 allQ category'>COLLEGE SPORTS</div>
-				<div className='col s1 allQ category'>SCIENCE</div>
-				<div className='col s1 allQ category'>JEOPARDY</div>
-				<div className='col s1 allQ category'>PLACES</div>
+				<div className='col s1 allQ category'>
+					<h3>MOVIES</h3>
+				</div>
+				<div className='col s1 allQ category'>
+					<h3>SPORTS</h3>
+				</div>
+				<div className='col s1 allQ category'>
+					<h3>COL SPORTS</h3>
+				</div>
+				<div className='col s1 allQ category'>
+					<h3>SCIENCE</h3>
+				</div>
+				<div className='col s1 allQ category'>
+					<h3>JEOPARDY</h3>
+				</div>
+				<div className='col s1 allQ category'>
+					<h3>PLACES</h3>
+				</div>
 			</div>
 		
 	)
