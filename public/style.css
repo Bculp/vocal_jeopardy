@@ -4,6 +4,33 @@ body {
 	background-color: white;
 	color: white;
 }
+
+/*=====HOMEPAGE========*/
+
+.homepage {
+	color: black;
+	margin-top:18%;
+}
+
+.title {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	/*width:10%;*/
+	padding-left:25% !important;
+}
+
+.btn {
+	margin-left: auto;
+	margin-right: auto;
+	width:25%;
+	display: inline-block;
+	margin-left: 20%;
+}
+
+.rightBtn {
+	margin-left: 3%;
+}
 /*===ALL QUESTIONS====*/
 .allQ {
 	border-style: ridge;

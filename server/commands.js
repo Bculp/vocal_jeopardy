@@ -109,7 +109,7 @@ const Commands = function(props) {
 	}
 
 	let NEXTQUESTION = function() {
-		browserHistory.push('/')
+		browserHistory.push('/questions')
 	}
 	// test.push('testlkasjdfl')
 	// obj[arrOfCommands] = [ENTERTAINMENT500, ENTERTAINMENT500ANSWER,ENTERTAINMENT200,

@@ -10,6 +10,7 @@ import AllQuestions from './components/AllQuestions'
 import AllQuestionsContainer from './containers/AllQuestionsContainer'
 import OneQuestionContainer from './containers/OneQuestionContainer'
 import OneAnswerContainer from './containers/OneAnswerContainer'
+import Homepage from './components/Homepage'
         // <IndexRedirect to="/" />
 
 //add onEnter to dispatch initial action
@@ -37,7 +38,8 @@ import CommandsContainer from './containers/CommandsContainer';
 render (
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path="/" component={AllQuestionsContainer} onEnter={onAllQuestionsEnter}/>
+   	  <Route path='/' component={Homepage} />
+      <Route path="/questions" component={AllQuestionsContainer} onEnter={onAllQuestionsEnter}/>
       <Route path="/test" component={CommandsContainer}/>
       <Route path="/question/:questionId" component={OneQuestionContainer} onEnter={onOneQuestionEnter}/>
       <Route path="/answer/:questionId" component={OneAnswerContainer} onEnter={onOneQuestionEnter}/>
