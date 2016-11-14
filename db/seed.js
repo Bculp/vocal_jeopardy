@@ -43,7 +43,7 @@ const data = {
 		{title: "Who is Gal Gadot", questionId: 2},
 		{title: "Who is Gal Gadot", questionId: 3},
 		{title: "Who is Gal Gadot", questionId: 4},
-		{title: "Who is Heather Ledger", questionId: 5},
+		{title: "Who is Heath Ledger", questionId: 5},
 		{title: "Who are The Chicago Bulls", questionId: 6},
 		{title: "Who are The Chicago Bulls", questionId: 7},
 		{title: "Who are The Chicago Bulls", questionId: 8},
@@ -64,11 +64,11 @@ const data = {
 		{title: "What is 6", questionId: 23},
 		{title: "What is 6", questionId: 24},
 		{title: "What is 6", questionId: 25},
-		{title: "Where is New York City", questionId: 26},
-		{title: "Where is New York City", questionId: 27},
-		{title: "Where is New York City", questionId: 28},
-		{title: "Where is New York City", questionId: 29},
-		{title: "Where is New York City", questionId: 30},
+		{title: "What is New York City", questionId: 26},
+		{title: "What is New York City", questionId: 27},
+		{title: "What is New York City", questionId: 28},
+		{title: "What is New York City", questionId: 29},
+		{title: "What is New York City", questionId: 30},
 
 	]
 };
