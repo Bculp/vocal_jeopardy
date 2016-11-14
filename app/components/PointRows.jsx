@@ -16,25 +16,13 @@ const PointRows = function(props) {
 	// 	if (document.querySelector('MOVIES500') != null) {
 	// 	document.querySelector('MOVIES500').innerHTML('')
 	// }
-	function newCheckCounter() {
-		question.id === 1 && counter === 0 ? question.pointValue = '' : ''
-		question.id === 5 && counter === 1 ? question.pointValue = '' : ''
-		question.id === 26 && counter === 2 ? question.pointValue = '' : ''
+	// function newCheckCounter() {
+	// 	question.id === 1 && counter === 0 ? question.pointValue = '' : ''
+	// 	question.id === 5 && counter === 1 ? question.pointValue = '' : ''
+	// 	question.id === 26 && counter === 2 ? question.pointValue = '' : ''
 
-	}
-
-	// 	if (document.getElementById('1') != null) {
-	// 		console.log('INSIDE ----IT WORKED')
-	// 		// switch(counter) {
-	// 		// 	case 0: console.log('YAAAAAAAAAAA')
-	// 		// 		break;
-	// 		// 	default: return;
-	// 		// }
-	// 		console.log('couterchec', counter === 0)
-	// 		if (counter === 0) document.getElementById('1').innerHTML('');
-	// 	}
-	// 	else return;
 	// }
+	
 	annyang.start()
 	annyang.debug()
 	let p100 = [], p200 = [], p300 = [], p400 = [], p500 = [];

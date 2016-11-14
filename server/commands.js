@@ -19,21 +19,21 @@ const Commands = function(props) {
 		// 	elArr[i].className += 'answered'
 		// }
 		// console.log('got it')
-		browserHistory.push('/answer/5')
+		browserHistory.push('/answer/1')
 		// browserHistory.push('/')
 	}
 
-	let MOVIES500 = function() {
-		browserHistory.push('/question/5')
+	let MOVIES200 = function() {
+		browserHistory.push('/question/2')
 	}
 
-	let MOVIES500ANSWER = function() {
+	let MOVIES200ANSWER = function() {
 		// let elArr = document.getElementsByClassName("PLACES200")
 		// for (var i = 0; i < elArr.length; i ++) {
 		// 	elArr[i].className += 'answered'
 		// }
 		// browserHistory.push('/')
-		browserHistory.push('/answer/1')
+		browserHistory.push('/answer/2')
 	}
 
 	let SPORTS100 = function() {
@@ -119,27 +119,37 @@ const Commands = function(props) {
 	let PLACES200ANSWER = function() {
 		browserHistory.push('/answer/27')
 	}
+
+	let MOVIES500 = function() {
+		browserHistory.push('/question/5')
+	}
+
+	let MOVIES500ANSWER = function() {
+		browserHistory.push('/answer/5')
+	}
 	// test.push('testlkasjdfl')
 	// obj[arrOfCommands] = [ENTERTAINMENT500, ENTERTAINMENT500ANSWER,ENTERTAINMENT200,
 	// SPORTS300, COLLEGESPORTS100, SCIENCE200, JEOPARDY400, PLACES200, PLACES200ANSWER]
 
 	annyang.addCommands({
 		'MOVIES 100' : MOVIES100,
-		'Who is *Heath Ledger' : MOVIES100ANSWER,
+			'Who is *Heath Ledger' : MOVIES100ANSWER,
+		'MOVIES 200' : MOVIES200,
+			'Who is *Gal Gadot' : MOVIES200ANSWER,
 		'MOVIES 500' : MOVIES500,
-		'Who is *Gal Gadot' : MOVIES500ANSWER,
-		'COLLEGE SPORTS 100' : COLLEGESPORTS100,
+			'Who is Quentin Tarantino' : MOVIES500ANSWER,
 		'SCIENCE 100' : SCIENCE100,
-		'JEOPARDY 100' : JEOPARDY100,
+			'What is 212 degrees': SCIENCE100ANSWER,
+			'What is 100 degress' : SCIENCE100ANSWER,
 		'PLACES 100' : PLACES100,
-		'What is *New York City' : PLACES100ANSWER,
+			'What is *New York City' : PLACES100ANSWER,
 		'Next Question' : NEXTQUESTION,
 		'PLACES 200' : PLACES200,
-		'What is Cincinnati, Ohio' : PLACES200ANSWER,
+			'What is Cincinnati, Ohio' : PLACES200ANSWER,
 		'COLLEGE SPORTS 400': COLLEGESPORTS100,
-		'Who is Archie Griffin' : COLLEGESPORTS100ANSWER,
+			'Who is Archie Griffin' : COLLEGESPORTS100ANSWER,
 		'SPORTS 100' : SPORTS100,
-		'Who are the Chicago Bulls': SPORTS100ANSWER
+			'Who are the Chicago Bulls': SPORTS100ANSWER
 
 	})
 
