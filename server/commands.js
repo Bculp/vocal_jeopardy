@@ -14,12 +14,13 @@ const Commands = function(props) {
 	}
 
 	let MOVIES100ANSWER = function() {
-		let elArr = document.getElementsByClassName('MOVIES100')
-		for (var i = 0; i < elArr.length; i ++) {
-			elArr[i].className += 'answered'
-		}
-		console.log('got it')
-		browserHistory.push('/')
+		// let elArr = document.getElementsByClassName('MOVIES100')
+		// for (var i = 0; i < elArr.length; i ++) {
+		// 	elArr[i].className += 'answered'
+		// }
+		// console.log('got it')
+		browserHistory.push('/answer/5')
+		// browserHistory.push('/')
 	}
 
 	let MOVIES500 = function() {
@@ -27,11 +28,12 @@ const Commands = function(props) {
 	}
 
 	let MOVIES500ANSWER = function() {
-		let elArr = document.getElementsByClassName("PLACES200")
-		for (var i = 0; i < elArr.length; i ++) {
-			elArr[i].className += 'answered'
-		}
-		browserHistory.push('/')
+		// let elArr = document.getElementsByClassName("PLACES200")
+		// for (var i = 0; i < elArr.length; i ++) {
+		// 	elArr[i].className += 'answered'
+		// }
+		// browserHistory.push('/')
+		browserHistory.push('/answer/1')
 	}
 
 	let SPORTS100 = function() {
@@ -39,11 +41,12 @@ const Commands = function(props) {
 	}
 
 	let SPORTS100ANSWER = function() {
-		let elArr = document.getElementsByClassName("PLACES200")
-		for (var i = 0; i < elArr.length; i ++) {
-			elArr[i].className += 'answered'
-		}
-		browserHistory.push('/')
+		// let elArr = document.getElementsByClassName("PLACES200")
+		// for (var i = 0; i < elArr.length; i ++) {
+		// 	elArr[i].className += 'answered'
+		// }
+		// browserHistory.push('/')
+		browserHistory.push('/answer/6')
 	}
 
 	let COLLEGESPORTS100 = function() {
@@ -51,11 +54,12 @@ const Commands = function(props) {
 	}
 
 	let COLLEGESPORTS100ANSWER = function() {
-		let elArr = document.getElementsByClassName("PLACES200")
-		for (var i = 0; i < elArr.length; i ++) {
-			elArr[i].className += 'answered'
-		}
-		browserHistory.push('/')
+		// let elArr = document.getElementsByClassName("PLACES200")
+		// for (var i = 0; i < elArr.length; i ++) {
+		// 	elArr[i].className += 'answered'
+		// }
+		// browserHistory.push('/')
+		browserHistory.push('/answer/11')
 	}
 
 	let SCIENCE100 = function() {
@@ -63,11 +67,12 @@ const Commands = function(props) {
 	}
 
 	let SCIENCE100ANSWER = function() {
-		let elArr = document.getElementsByClassName("PLACES200")
-		for (var i = 0; i < elArr.length; i ++) {
-			elArr[i].className += 'answered'
-		}
-		browserHistory.push('/')
+		// let elArr = document.getElementsByClassName("PLACES200")
+		// for (var i = 0; i < elArr.length; i ++) {
+		// 	elArr[i].className += 'answered'
+		// }
+		// browserHistory.push('/')
+		browserHistory.push('/answer/16')
 	}
 
 	let JEOPARDY100 = function() {
@@ -75,11 +80,12 @@ const Commands = function(props) {
 	}
 
 	let JEOPARDY100ANSWER = function() {
-		let elArr = document.getElementsByClassName("PLACES200")
-		for (var i = 0; i < elArr.length; i ++) {
-			elArr[i].className += 'answered'
-		}
-		browserHistory.push('/')
+		// let elArr = document.getElementsByClassName("PLACES200")
+		// for (var i = 0; i < elArr.length; i ++) {
+		// 	elArr[i].className += 'answered'
+		// }
+		// browserHistory.push('/')
+		browserHistory.push('/answer/21')
 	}
 
 	let PLACES100 = function() {
@@ -98,6 +104,11 @@ const Commands = function(props) {
 
 		// props.changeQuestionStatus('7')
 
+		// browserHistory.push('/')
+		browserHistory.push('/answer/26')
+	}
+
+	let NEXTQUESTION = function() {
 		browserHistory.push('/')
 	}
 	// test.push('testlkasjdfl')
@@ -114,9 +125,9 @@ const Commands = function(props) {
 		'SCIENCE 100' : SCIENCE100,
 		'JEOPARDY 100' : JEOPARDY100,
 		'PLACES 100' : PLACES100,
-		'What is *New York City' : PLACES100ANSWER
+		'What is *New York City' : PLACES100ANSWER,
+		'Next Question' : NEXTQUESTION
 	})
-	return (<h1>inside commands js</h1>)
 
 	// return annyang;
 	// console.log('hello')
@@ -126,16 +137,7 @@ const Commands = function(props) {
 
 //need to call this above fn to actually add commands
 Commands();
-console.log('this is annyang', annyang)
-console.log('arrOfCommands', test)
+// console.log('this is annyang', annyang)
+// console.log('arrOfCommands', test)
 module.exports = Commands;
-
-
-
-
-
-
-
-
-
 
