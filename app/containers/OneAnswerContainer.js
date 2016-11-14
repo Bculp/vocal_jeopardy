@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import { loadOneQuestion, loadQuestionToAnswer } from '../action-creators'
-import OneQuestion from '../components/OneQuestion'
+import OneAnswerComponent from '../components/OneAnswer'
 
 const mapStateToProps = function(state) {
 	return {
@@ -26,5 +26,5 @@ const mapDispatchToProps = function(dispatch, ownProps) {
 }
 
 const componentCreator = connect(mapStateToProps, mapDispatchToProps)
-const OneQuestionContainer = componentCreator(OneQuestion);
-export default OneQuestionContainer;
+const OneAnswerContainer = componentCreator(OneAnswerComponent);
+export default OneAnswerContainer;

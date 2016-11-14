@@ -5,11 +5,11 @@ import {render} from 'react-dom'
 import {connect, Provider} from 'react-redux'
 
 import store from './store'
-// import AllQusestions from './components/AllQuestions'
 import OneQuestion from './components/OneQuestion'
 import AllQuestions from './components/AllQuestions'
 import AllQuestionsContainer from './containers/AllQuestionsContainer'
 import OneQuestionContainer from './containers/OneQuestionContainer'
+import OneAnswerContainer from './containers/OneAnswerContainer'
         // <IndexRedirect to="/" />
 
 //add onEnter to dispatch initial action
@@ -40,6 +40,7 @@ render (
       <Route path="/" component={AllQuestionsContainer} onEnter={onAllQuestionsEnter}/>
       <Route path="/test" component={CommandsContainer}/>
       <Route path="/question/:questionId" component={OneQuestionContainer} onEnter={onOneQuestionEnter}/>
+      <Route path="/answer/:questionId" component={OneAnswerContainer} onEnter={onOneQuestionEnter}/>
     </Router>
    </Provider>,
   document.getElementById('main')

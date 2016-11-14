@@ -43,8 +43,8 @@ export const loadOneQuestion = function(questionId) {
 
 const answerQuestion = function(question) {
 	return {
-		type: ANSWER_QUESTION
-		// answeredQuestion: question
+		type: ANSWER_QUESTION,
+		answeredQuestion: question
 	}
 }
 

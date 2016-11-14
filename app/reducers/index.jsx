@@ -16,9 +16,11 @@ function oneQuestionReducer (state = {}, action) {
 	}
 }
 
-function questionStatusReducer (state = 'unanswered', action) {
+//changed this from str unanswered or answered to array so that it
+//can be an arry of objs with key = questionId and value = answer status
+function questionStatusReducer (state = [], action) {
 	switch(action.type) {
-		case ANSWER_QUESTION: return 'answered';
+		case ANSWER_QUESTION: return action.answeredQuestion;
 		default: return state;
 	}
 }
