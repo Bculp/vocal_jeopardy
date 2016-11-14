@@ -111,6 +111,14 @@ const Commands = function(props) {
 	let NEXTQUESTION = function() {
 		browserHistory.push('/questions')
 	}
+
+	let PLACES200 = function() {
+		browserHistory.push('/question/27')
+	}
+
+	let PLACES200ANSWER = function() {
+		browserHistory.push('/answer/27')
+	}
 	// test.push('testlkasjdfl')
 	// obj[arrOfCommands] = [ENTERTAINMENT500, ENTERTAINMENT500ANSWER,ENTERTAINMENT200,
 	// SPORTS300, COLLEGESPORTS100, SCIENCE200, JEOPARDY400, PLACES200, PLACES200ANSWER]
@@ -120,13 +128,19 @@ const Commands = function(props) {
 		'Who is *Heath Ledger' : MOVIES100ANSWER,
 		'MOVIES 500' : MOVIES500,
 		'Who is *Gal Gadot' : MOVIES500ANSWER,
-		'SPORTS 100' : SPORTS100,
 		'COLLEGE SPORTS 100' : COLLEGESPORTS100,
 		'SCIENCE 100' : SCIENCE100,
 		'JEOPARDY 100' : JEOPARDY100,
 		'PLACES 100' : PLACES100,
 		'What is *New York City' : PLACES100ANSWER,
-		'Next Question' : NEXTQUESTION
+		'Next Question' : NEXTQUESTION,
+		'PLACES 200' : PLACES200,
+		'What is Cincinnati, Ohio' : PLACES200ANSWER,
+		'COLLEGE SPORTS 400': COLLEGESPORTS100,
+		'Who is Archie Griffin' : COLLEGESPORTS100ANSWER,
+		'SPORTS 100' : SPORTS100,
+		'Who are the Chicago Bulls': SPORTS100ANSWER
+
 	})
 
 	// return annyang;
