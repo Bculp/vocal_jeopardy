@@ -4,36 +4,62 @@ const annyang = require('../../public/annyang_source_code');
 import AllQuestions from './AllQuestions'
 window.counter = 0;
 
-const PointRows = function(props) {
+const ContinuePlaying = function(props) {
 
-	// function checkCounter() {
-	// 		// console.log('couterchec first layer', counter === 0)
-	// 	// if (document.getElementsByClassName('MOVIES500') != null) {
-	// 	// 	console.log('classes worked')
-	// 	// 	console.log('class', document.getElementsByClassName('MOVIES500'))
-	// 	// 	// document.getElementsByClassName('MOVIES500')[0].innerHTML = '';
-	// 	// }
-	// 	if (document.querySelector('MOVIES500') != null) {
-	// 	document.querySelector('MOVIES500').innerHTML('')
-	// }
-	// function newCheckCounter() {
-	// 	question.id === 1 && counter === 0 ? question.pointValue = '' : ''
-	// 	question.id === 5 && counter === 1 ? question.pointValue = '' : ''
-	// 	question.id === 26 && counter === 2 ? question.pointValue = '' : ''
 
-	// }
-
+	let newCheckCounter = function(id) {
+		if (id === 1) {
+			return ''
+		}
+		else if (id === 8) {
+			return ''
+		}
+		else if (id === 30) {
+			return ''
+		}
+		else if (id === 20) {
+			return ''
+		}
+		else if (id === 15) {
+			return ''
+		}
+		else if (id === 17) {
+			return ''
+		}
+		else if (id === 7) {
+			return ''
+		}
+		else if (id === 13) {
+			return ''
+		}
+		else if (id === 12) {
+			return ''
+		}
+		else if (id ===6) {
+			return ''
+		}
+		else if (id===11) {
+			return ''
+		}
+		else if (id===21) {
+			return ''
+		}
+		else if (id===6) {
+			return ''
+		}
+		else if (id===26) {
+			return ''
+		}
+		else return ''
+	}
 	function GOBACK() {
 		browserHistory.push('/')
 	}
 	annyang.addCommands({'go back' : GOBACK})
-	
 	annyang.start()
 	annyang.debug()
-	
 	let p100 = [], p200 = [], p300 = [], p400 = [], p500 = [];
 	props.allQsandAs.map(function(question) {
-		
 		if (question.pointValue === 100) p100.push(question)
 		else if (question.pointValue === 200) p200.push(question)
 		else if (question.pointValue === 300) p300.push(question)
@@ -48,7 +74,11 @@ const PointRows = function(props) {
 		<div className='row'>
 			{p100.map(question => (
 				<div className= "col s2 allQ pointVal" key={question.id}>
-				{/*newCheckCounter()*/}
+				{question.id === 1 ? question.pointValue = newCheckCounter(question.id) : ''}
+				{question.id === 11 ? question.pointValue = newCheckCounter(question.id) : ''}
+				{question.id === 21 ? question.pointValue = newCheckCounter(question.id) : ''}
+				{question.id === 6 ? question.pointValue = newCheckCounter(question.id) : ''}
+				{question.id === 26 ? question.pointValue = newCheckCounter(question.id) : ''}
 					<p className= {`${question.category}${question.pointValue}`} id={`${question.id}`}>{question.pointValue}</p>
 				</div>
 			))}
@@ -57,6 +87,9 @@ const PointRows = function(props) {
 		<div className='row'>
 			{p200.map(question => (
 				<div className= "col s2 allQ pointVal" key={question.id}>
+				{question.id === 7 ? question.pointValue = newCheckCounter(question.id) : ''}
+				{question.id === 17 ? question.pointValue = newCheckCounter(question.id) : ''}
+				{question.id === 12 ? question.pointValue = newCheckCounter(question.id) : ''}
 					<p className= {`${question.category}${question.pointValue}`} id={`${question.id}`}>{question.pointValue}</p>
 				</div>
 			))}
@@ -65,6 +98,8 @@ const PointRows = function(props) {
 		<div className='row'>
 			{p300.map(question => (
 				<div className= "col s2 allQ pointVal" key={question.id}>
+				{question.id === 8 ? question.pointValue = newCheckCounter(question.id) : ''}
+				{question.id === 13 ? question.pointValue = newCheckCounter(question.id) : ''}
 					<p className= {`${question.category}${question.pointValue}`} id={`${question.id}`}>{question.pointValue}</p>
 				</div>
 			))}
@@ -81,7 +116,9 @@ const PointRows = function(props) {
 		<div className='row'>
 			{p500.map(question => (
 				<div className= "col s2 allQ pointVal" key={question.id}>
-				{/*newCheckCounter()*/}
+				{question.id === 30 ? question.pointValue = newCheckCounter(question.id) : ''}
+				{question.id === 20 ? question.pointValue = newCheckCounter(question.id) : ''}
+				{question.id === 15 ? question.pointValue = newCheckCounter(question.id) : ''}
 					<p className= {`${question.category}${question.pointValue}`} id={`${question.id}`}>{question.pointValue}</p>
 				</div>
 			))}
@@ -91,17 +128,4 @@ const PointRows = function(props) {
 	
 }
 
-export default PointRows;
-
-// OLD WAY OF LOOPING OVER
-
-// <div className='row'>
-// 			{props.allQsandAs.map(question => (
-// 				<div className= "col s2 allQ" key={question.id}>
-// 					<p className= {`${question.category}${question.pointValue}`}>{question.category}</p>
-// 					<div className='pts'>
-// 						<p>100</p>
-// 					</div>
-// 				</div>
-// 			))}
-// 		</div>
+export default ContinuePlaying;

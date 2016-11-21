@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import { browserHistory } from 'react-router';
 const annyang = require('../../server/commands');
-// const annyang = require('../../public/annyang_source_code');
 
 //create command for each category&pointvalue that calls same function but with
 //parameter based on category&pointValue to push to browserHistory
