@@ -5,8 +5,6 @@ import PointRows from './PointRows'
 const AllQuestions = function() {
 
 //pull in annyang
-// const annyang = require('../../public/annyang_source_code');
-// const annyang = require('../../server/commands').annyang;
 const annyang = require('../../public/annyang_source_code');
 
 

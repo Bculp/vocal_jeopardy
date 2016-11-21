@@ -1,5 +1,5 @@
 import React from 'react';
-import { browserHistory } from 'react'
+import { browserHistory } from 'react-router'
 const annyang = require('../../public/annyang_source_code');
 import AllQuestions from './AllQuestions'
 window.counter = 0;
@@ -22,27 +22,24 @@ const PointRows = function(props) {
 	// 	question.id === 26 && counter === 2 ? question.pointValue = '' : ''
 
 	// }
+
+	function GOBACK() {
+		browserHistory.push('/')
+	}
+	annyang.addCommands({'go back' : GOBACK})
 	
 	annyang.start()
 	annyang.debug()
+	
 	let p100 = [], p200 = [], p300 = [], p400 = [], p500 = [];
 	props.allQsandAs.map(function(question) {
-		// console.log('ptvalue', question.pointValue)
-		// switch(question.pointValue) {
-		// 	case 100: p100.push(question);
-		// 	case 200: p200.push(question);
-		// 	case 300: p300.push(question);
-		// 	case 400: p400.push(question);
-		// 	case 500: p500.push(question);
-		// 	default: console.log('none found!!!!!')
-		// }
+		
 		if (question.pointValue === 100) p100.push(question)
 		else if (question.pointValue === 200) p200.push(question)
 		else if (question.pointValue === 300) p300.push(question)
 		else if (question.pointValue === 400) p400.push(question)
 		else if (question.pointValue === 500) p500.push(question)
 	})
-	// console.log('p100:', p100, 'p200:', p200, 'p300', p300,'p400', p400, 'p500', p500)
 	return (
 		<div>
 		

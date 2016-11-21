@@ -1,7 +1,6 @@
 import { connect } from 'react-redux'
 import { loadQuestionToAnswer } from '../action-creators'
 const Commands = require('../../server/commands');
-// import TestComponent from '../components/TestComponent';
 const TestComponent = require('../components/TestComponent');
 
 const mapStateToProps = function(state) {

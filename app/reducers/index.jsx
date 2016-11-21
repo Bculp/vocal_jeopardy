@@ -25,9 +25,6 @@ function questionStatusReducer (state = [], action) {
 	}
 }
 
-// export default allQuestionsAndAnswersReducer;
-//this will eventually be rootreducer for combined reducers
-
 const rootReducer = combineReducers({
   allQuestions : allQuestionsAndAnswersReducer,
   oneQuestion : oneQuestionReducer,

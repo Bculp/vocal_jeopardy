@@ -11,6 +11,8 @@ import AllQuestionsContainer from './containers/AllQuestionsContainer'
 import OneQuestionContainer from './containers/OneQuestionContainer'
 import OneAnswerContainer from './containers/OneAnswerContainer'
 import Homepage from './components/Homepage'
+import Scoreboard from './components/Scoreboard'
+import ContinuePlayingContainer from './containers/ContinuePlaying'
         // <IndexRedirect to="/" />
 
 //add onEnter to dispatch initial action
@@ -43,8 +45,9 @@ render (
       <Route path="/test" component={CommandsContainer}/>
       <Route path="/question/:questionId" component={OneQuestionContainer} onEnter={onOneQuestionEnter}/>
       <Route path="/answer/:questionId" component={OneAnswerContainer} onEnter={onOneQuestionEnter}/>
+      <Route path='/scoreboard' component={Scoreboard} />
+      <Route path='/continue' component={ContinuePlayingContainer} onEnter={onAllQuestionsEnter}/>
     </Router>
    </Provider>,
   document.getElementById('main')
 )
-        // <Route path="/question/:questionId" component={OneQuestion} />
