@@ -6,7 +6,6 @@ function goToQuestions() {
 }
 
 let STARTGAME = function() {
-	// browserHistory.push('/questions')
 	goToQuestions()
 }
 annyang.addCommands({'Start game': STARTGAME})
