@@ -5,9 +5,13 @@ Stackathon project by Brandon Culp to showcase how accessibility can be entertai
 ## Starting the app
 
 `git clone or download the repo`
+
 `cd into the project directory`
+
 `type npm install`
+
 `type npm start`
+
 `open your browser and go to localhost:3000`
 
 ## App structure
