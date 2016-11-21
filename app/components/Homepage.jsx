@@ -6,7 +6,6 @@ function goToQuestions() {
 }
 
 let STARTGAME = function() {
-	// browserHistory.push('/questions')
 	goToQuestions()
 }
 
@@ -17,10 +16,10 @@ function goToContinuePlaying() {
 let CONTINUEPLAYING = function() {
 	goToContinuePlaying()
 }
-// annyang.addCommands({
-// 	'Start game': STARTGAME,
-// 	'Continue playing' : CONTINUEPLAYING
-// })
+annyang.addCommands({
+	'Start game': STARTGAME,
+	'Continue playing' : CONTINUEPLAYING
+})
 annyang.start()
 annyang.debug()
 
