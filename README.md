@@ -1,6 +1,6 @@
 Voice Jeopardy
 
-- Stackathon project by Brandon Culp to showcase how accessibility can be entertaining.
+Stackathon project by Brandon Culp to showcase how accessibility can be entertaining.
 
 ## Starting the app
 
