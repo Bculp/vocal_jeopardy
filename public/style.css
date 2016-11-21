@@ -82,3 +82,22 @@ body {
 .answered {
 	color: red;
 }
+
+/*======SCOREBOARD======*/
+
+.player1 {
+
+}
+
+.playerContainer {
+	border-style: dashed;
+	margin: 2%;
+}
+.head p {
+	text-align: right;
+}
+
+
+
+
+
