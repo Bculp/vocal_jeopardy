@@ -8,9 +8,7 @@ const ContinuePlaying = function(props) {
 
 
 	let newCheckCounter = function(id) {
-		// console.log('check counter runnin')
 		if (id === 1) {
-			// console.log('yassssssss')
 			return ''
 		}
 		else if (id === 8) {
