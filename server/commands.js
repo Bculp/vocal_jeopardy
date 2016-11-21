@@ -1,26 +1,15 @@
-//NOT USING YET
-const annyang = require('../public/annyang_source_code');
 import { browserHistory } from 'react-router'
 import React from 'react'
-
-let obj = {arrOfCommands: []};
-let test = [];
+const annyang = require('../public/annyang_source_code');
 
 const Commands = function(props) {
-	// console.log('inside commands and props', props)
 
 	let MOVIES100 = function() {
 		browserHistory.push('/question/1')
 	}
 
 	let MOVIES100ANSWER = function() {
-		// let elArr = document.getElementsByClassName('MOVIES100')
-		// for (var i = 0; i < elArr.length; i ++) {
-		// 	elArr[i].className += 'answered'
-		// }
-		// console.log('got it')
 		browserHistory.push('/answer/1')
-		// browserHistory.push('/')
 	}
 
 	let MOVIES200 = function() {
@@ -28,11 +17,6 @@ const Commands = function(props) {
 	}
 
 	let MOVIES200ANSWER = function() {
-		// let elArr = document.getElementsByClassName("PLACES200")
-		// for (var i = 0; i < elArr.length; i ++) {
-		// 	elArr[i].className += 'answered'
-		// }
-		// browserHistory.push('/')
 		browserHistory.push('/answer/2')
 	}
 
@@ -41,11 +25,6 @@ const Commands = function(props) {
 	}
 
 	let SPORTS100ANSWER = function() {
-		// let elArr = document.getElementsByClassName("PLACES200")
-		// for (var i = 0; i < elArr.length; i ++) {
-		// 	elArr[i].className += 'answered'
-		// }
-		// browserHistory.push('/')
 		browserHistory.push('/answer/6')
 	}
 
@@ -54,11 +33,6 @@ const Commands = function(props) {
 	}
 
 	let COLLEGESPORTS100ANSWER = function() {
-		// let elArr = document.getElementsByClassName("PLACES200")
-		// for (var i = 0; i < elArr.length; i ++) {
-		// 	elArr[i].className += 'answered'
-		// }
-		// browserHistory.push('/')
 		browserHistory.push('/answer/11')
 	}
 
@@ -67,11 +41,6 @@ const Commands = function(props) {
 	}
 
 	let SCIENCE100ANSWER = function() {
-		// let elArr = document.getElementsByClassName("PLACES200")
-		// for (var i = 0; i < elArr.length; i ++) {
-		// 	elArr[i].className += 'answered'
-		// }
-		// browserHistory.push('/')
 		browserHistory.push('/answer/16')
 	}
 
@@ -80,11 +49,6 @@ const Commands = function(props) {
 	}
 
 	let JEOPARDY100ANSWER = function() {
-		// let elArr = document.getElementsByClassName("PLACES200")
-		// for (var i = 0; i < elArr.length; i ++) {
-		// 	elArr[i].className += 'answered'
-		// }
-		// browserHistory.push('/')
 		browserHistory.push('/answer/21')
 	}
 
@@ -93,18 +57,6 @@ const Commands = function(props) {
 	}
 
 	let PLACES100ANSWER = function() {
-		// let elArr = document.getElementsByClassName("PLACES200")
-		// for (var i = 0; i < elArr.length; i ++) {
-		// 	elArr[i].className += 'answered'
-		// }
-		//pull off dispatchToProps and call it
-		//need to get questionId
-		// let questionId = document.getElementById('7')
-		// console.log('questionId in command.js is', questionId)
-
-		// props.changeQuestionStatus('7')
-
-		// browserHistory.push('/')
 		browserHistory.push('/answer/26')
 	}
 
@@ -127,9 +79,6 @@ const Commands = function(props) {
 	let MOVIES500ANSWER = function() {
 		browserHistory.push('/answer/5')
 	}
-	// test.push('testlkasjdfl')
-	// obj[arrOfCommands] = [ENTERTAINMENT500, ENTERTAINMENT500ANSWER,ENTERTAINMENT200,
-	// SPORTS300, COLLEGESPORTS100, SCIENCE200, JEOPARDY400, PLACES200, PLACES200ANSWER]
 
 	annyang.addCommands({
 		'MOVIES 100' : MOVIES100,
@@ -145,23 +94,16 @@ const Commands = function(props) {
 			'What is *New York City' : PLACES100ANSWER,
 		'Next Question' : NEXTQUESTION,
 		'PLACES 200' : PLACES200,
-			'What is Cincinnati, Ohio' : PLACES200ANSWER,
+			'What is Cincinnati' : PLACES200ANSWER,
 		'COLLEGE SPORTS 400': COLLEGESPORTS100,
 			'Who is Archie Griffin' : COLLEGESPORTS100ANSWER,
 		'SPORTS 100' : SPORTS100,
 			'Who are the Chicago Bulls': SPORTS100ANSWER
 
 	})
-
-	// return annyang;
-	// console.log('hello')
-	// console.log('inside annyang', annyang)
-	// return annyang;
 }
 
 //need to call this above fn to actually add commands
 Commands();
-// console.log('this is annyang', annyang)
-// console.log('arrOfCommands', test)
-module.exports = Commands;
 
+module.exports = Commands;
