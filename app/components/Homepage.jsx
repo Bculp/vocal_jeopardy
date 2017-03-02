@@ -25,10 +25,12 @@ annyang.debug()
 
 const Homepage = function() {
 	return (
-		<div className='row homepage'>
-			<h1 className='col s12 title'>Welcome to Jeopardy!</h1>
-			<button className='waves-effect waves-light btn' onClick={goToQuestions}>Start Game</button>
-			<button className = 'waves-effect waves-light btn rightBtn' onClick={goToContinuePlaying}>Continue Playing</button>
+		<div className='homepage'>
+			<h1>Welcome to Jeopardy!</h1>
+			<div className='flexbox-row'>
+				<button className='waves-effect waves-light btn' onClick={goToQuestions}>Start Game</button>
+				<button className = 'waves-effect waves-light btn rightBtn' onClick={goToContinuePlaying}>Continue Playing</button>
+			</div>
 		</div>
 	)
 }
